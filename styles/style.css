@@ -1,8 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:wght@300;400&family=Open+Sans&family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:wght@300;400&family=Open+Sans&family=Poppins:wght@300&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: #eee;
+}
+.wrapper {
+  width: 400px;
+  margin: 10px auto;
+  padding: 10px;
+  padding-bottom: 50px;
+}
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.header > div {
+  text-transform: uppercase;
+}
+.today {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.month_year {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  color: #888;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.date {
+  font-weight: 900;
+  font-size: 33px;
+  margin-right: 6px;
+}
+.year {
+  line-height: 15px;
+}
+.todo_list {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  background-color: #fff;
+}
+.list_item {
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+.list_item p {
+  font-weight: 500;
+}
+.list_item p small {
+  font-weight: lighter;
+}
+.list_item span {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  align-self: center;
+}
+.list_item.complete {
+  color: #999;
+}
+.list_item.complete span {
+  background-color: #50dd67;
+  border-color: #2aba41;
+}
+.menu-btn {
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 2em;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  padding-top: 16px;
+  margin-left: 160px;
+  margin-top: -20px;
+  cursor: pointer;
+}
+.add-btn {
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 2em;
+  color: #fff;
+  background-color: #50dd67;
+  text-align: center;
+  padding-top: 16px;
+  margin-left: 160px;
+  margin-top: -20px;
+  cursor: pointer;
+}
+.add-btn.move {
+    margin-left: 0px;
+}
+.delete-btn {
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 2em;
+  color: #fff;
+  background-color: red;
+  text-align: center;
+  padding-top: 16px;
+  margin-left: 160px;
+  margin-top: -20px;
+  cursor: pointer;
+}
+.delete-btn.move {
+    margin-left: 350px;
 }

@@ -1,15 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+    <title>Todo App</title>
 </head>
-<body>
-    
 
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="today">
+                <span class="date">12</span>
+                <span class="month_year">
+                    <span class="month">Jan</span>
+                    <span class="year">2023</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="todo_list">
+            <div class="list_item">
+                <p>
+                    Title here<br>
+                    <small>23 March 2023</small>
+                </p>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="todo_list">
+            <div class="list_item complete">
+                <p>
+                    Title here<br>
+                    <small>23 March 2023</small>
+                </p>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <span class="add-btn">
+                <i class="ri-add-line"></i>
+            </span>
+            <span class="delete-btn">
+                <i class="ri-delete-bin-5-line"></i>
+            </span>
+             <span class="menu-btn">
+                <i class="ri-menu-line"></i>
+            </span>
+        </div>
+
+    </div>
     <script src="./src/app.js"></script>
 </body>
+
 </html>
