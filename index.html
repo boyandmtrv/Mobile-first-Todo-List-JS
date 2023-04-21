@@ -23,23 +23,7 @@
         </div>
 
         <div class="todo_list">
-            <div class="list_item">
-                <p>
-                    Title here<br>
-                    <small>23 March 2023</small>
-                </p>
-                <span></span>
-            </div>
-        </div>
-
-        <div class="todo_list">
-            <div class="list_item complete">
-                <p>
-                    Title here<br>
-                    <small>23 March 2023</small>
-                </p>
-                <span></span>
-            </div>
+           
         </div>
 
         <div class="btn-container">
@@ -51,9 +35,25 @@
             </span>
              <span class="menu-btn">
                 <i class="ri-menu-line"></i>
+                <i class="ri-close-line hide"></i>
             </span>
         </div>
 
+        <div id="modal">
+            <h4>New Todo</h4>
+            <form id="add-form">
+                <input type="text" class="new-title" required>
+                <input type="date" class="new-date" required>
+
+                <p>
+                    <button type="submit" class="add-todo">Add</button>
+                </p>
+            </form>
+        </div>
+        <div class="cover"></div>
+    </div>
+    <div id="night-mode">
+        <i class="ri-contrast-2-line"></i>
     </div>
     <script src="./src/app.js"></script>
 </body>
